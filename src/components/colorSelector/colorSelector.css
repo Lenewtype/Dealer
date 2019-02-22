@@ -1,0 +1,17 @@
+.color-selector {
+	display: flex;
+}
+
+.color-selector__option {
+	border: 1px solid #56b5ff;
+	cursor: pointer;
+	height: 30px;
+	margin: 0 5px;
+	width: 30px;
+}
+
+.color-selector__option--selected {
+	border: 4px dashed #56b5ff;
+	height: 24px;
+	width: 24px;
+}

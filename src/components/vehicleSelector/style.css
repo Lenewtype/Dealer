@@ -1,0 +1,24 @@
+.vehicle-selector__option {
+	border: 1px solid #1e5f91;
+	cursor: pointer;
+	display: inline-block;
+	height: 40px;
+	transition: border-color 0.2s, background-color 0.2s;
+	transition-timing-function: ease-in;
+	width: 40px;
+}
+
+.vehicle-selector__option--selected, .vehicle-selector__option:hover {
+	background-color: #8ab0ce;
+	border-color: #56b5ff;
+}
+
+.vehicle-selector__option--selected {
+	cursor: default;
+}
+
+.vehicle-selector__option-wrap {
+	display: inline-block;
+	margin: 5px 10px;
+	text-align: center;
+}

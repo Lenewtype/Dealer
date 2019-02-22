@@ -1,0 +1,15 @@
+.heading {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+}

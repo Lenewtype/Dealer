@@ -1,0 +1,10 @@
+.form {
+	max-width: 800px;
+	margin: 0;
+	padding: 15px;
+}
+
+
+select {
+	display: block;
+}
