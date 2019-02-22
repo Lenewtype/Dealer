@@ -5,9 +5,9 @@ const types = {
 };
 
 const brands = {
-	0: ['Chevrolet', 'Honda', 'Toyota', 'Lexus', 'Acura', 'Ford', 'Jaguar', 'BMW'],
-	1: ['Chevrolet', 'Honda', 'Toyota', 'Lexus', 'Acura', 'Ford', 'Jaguar', 'BMW', 'GMC'],
-	2: ['Chevrolet', 'Honda', 'Toyota', 'Ford', 'GMC']
+	0: ['Chevrolet', 'Jaguar'],
+	1: ['Chevrolet', 'Jaguar', 'GMC'],
+	2: ['Chevrolet', 'GMC']
 };
 
 const vehicleConfig = {
@@ -133,7 +133,7 @@ const vehicleConfig = {
 				'F9851C' : 'Orange Burst Metallic'
 
 			},
-			colorPrices: {
+			colorPrice: {
 				'1C4432': 395,
 				'F9851C' : 395
 			}
@@ -166,7 +166,7 @@ const vehicleConfig = {
 				'9E9788': 'Pepperdust Metallic',
 				'B80625' : 'Cajun Red'
 			},
-			colorPrices: {
+			colorPrice: {
 				'B80625': 395
 			}
 
@@ -199,7 +199,7 @@ const vehicleConfig = {
 				'B80625' : 'Cajun Red',
 				'00577E' : 'Deep Ocean Blue Metallic'
 			},
-			colorPrices: {
+			colorPrice: {
 				'B80625': 495,
 				'00577E' : 395
 			}
@@ -207,7 +207,20 @@ const vehicleConfig = {
 		}
 	},
 	'Jaguar': {
-
+		'F-type' :  {
+			name: 'F-type',
+			type: 0,
+			basePrice: 61600,
+			driveTrain: ['RWD'],
+			driveTrainPrice: {
+				'RWD': 0
+			},
+			trim: ['F-type', 'Checkered Flag'],
+			trimPrice: { 'F-type': 0, 'Checkered Flag': 10300},
+			colors: ['9fa5a5', '71aeff'],
+			colorNames: {'9fa5a5' : 'Fuji White', '71aeff': 'Ultra Blue'},
+			colorPrice:{'9fa5a5': 0, '71aeff': 710}
+		}
 	},
 	'GMC' : {
 
