@@ -39,6 +39,7 @@ class Form extends React.Component<Props, State> {
 	}
 
 	onTypeChange(value: number): void {
+		this.props.onFormClear();
 		this.setState({type: value, brand: '', make: '', trim: '', drive: '', color: ''});
 	}
 

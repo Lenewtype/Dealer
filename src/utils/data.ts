@@ -5,9 +5,9 @@ const types = {
 };
 
 const brands = {
-	0: ['Chevrolet', 'Honda', 'Toyota', 'Lexus', 'Acura', 'Ford', 'Jaguar', 'BMW'],
-	1: ['Chevrolet', 'Honda', 'Toyota', 'Lexus', 'Acura', 'Ford', 'Jaguar', 'BMW', 'GMC'],
-	2: ['Chevrolet', 'Honda', 'Toyota', 'Ford', 'GMC']
+	0: ['Chevrolet', 'Jaguar'],
+	1: ['Chevrolet', 'Jaguar', 'GMC'],
+	2: ['Chevrolet', 'GMC']
 };
 
 const vehicleConfig = {
@@ -133,7 +133,7 @@ const vehicleConfig = {
 				'F9851C' : 'Orange Burst Metallic'
 
 			},
-			colorPrices: {
+			colorPrice: {
 				'1C4432': 395,
 				'F9851C' : 395
 			}
@@ -166,7 +166,7 @@ const vehicleConfig = {
 				'9E9788': 'Pepperdust Metallic',
 				'B80625' : 'Cajun Red'
 			},
-			colorPrices: {
+			colorPrice: {
 				'B80625': 395
 			}
 
@@ -199,7 +199,7 @@ const vehicleConfig = {
 				'B80625' : 'Cajun Red',
 				'00577E' : 'Deep Ocean Blue Metallic'
 			},
-			colorPrices: {
+			colorPrice: {
 				'B80625': 495,
 				'00577E' : 395
 			}
@@ -207,10 +207,123 @@ const vehicleConfig = {
 		}
 	},
 	'Jaguar': {
+		'F-type' : {
+			name: 'F-type',
+			basePrice: 61600,
+			type: 0,
+			driveTrain: ['RWD'],
+			driveTrainPrice: {
+				'RWD': 0
+			},
+			trim: ['F-type', 'Checkered Flag'],
+			trimPrice: {
+				'F-type': 0,
+				'Checkered Flag': 10600
+			},
+			colors: ['FFFEFA', '981210', '1B58B9', 'D06029', '192425', 'F8F4E1'],
+			colorNames: {
+				'FFFEFA': 'Fuji White',
+				'981210' : 'Caldera Red',
+				'1B58B9': 'Ultra Blue',
+				'D06029': 'Madagascar Orange',
+				'124382' : 'Velocity Blue',
+				'192425' : 'British Racing Green #5',
+				'F8F4E1' : 'Vallorie White'
+			},
+			colorPrice: {
+				'1B58B9' : 710,
+				'D06029': 4900,
+				'124382' : 4900,
+				'192425' : 4900,
+				'F8F4E1' : 8500
+			}
+		},
+		'I-Pace' : {
+			name: 'I-Pace',
+			basePrice: 69500,
+			type: 1,
+			driveTrain: ['AWD'],
+			driveTrainPrice: {
+				'AWD': 0
+			},
+			trim: ['S', 'SE', 'HSE'],
+			trimPrice: {
+				'S' : 0,
+				'SE': 6350,
+				'HSE': 11000
+			},
+			colors: ['FFFEFA', '233675', '9A9A98', '243141'],
+			colorNames: {
+				'FFFEFA': 'Fuji White',
+				'233675' : 'Caesium Blue',
+				'9A9A98': 'Borasco Grey',
+				'243141' : 'Farallon Pearl Black'
+			},
+			colorPrice: {
+				'233675': 575,
+				'243141': 1175
+			}
+		}
 
 	},
 	'GMC' : {
-
+		'Acadia' : {
+			name: 'Acadia',
+			basePrice: 30195,
+			type: 1,
+			driveTrain: ['FWD', 'AWD'],
+			driveTrainPrice: {
+				'FWD': 0,
+				'AWD': 5800
+			},
+			trim: ['SL', 'SLE-1', 'SLE-2', 'SLT-1', 'SLT-2', 'Denali'],
+			trimPrice: {
+				'SL': 1,
+				'SLE-1': 3800,
+				'SLE-2': 6200,
+				'SLT-1': 9000,
+				'SLT-2': 12900,
+				'Denali': 16500
+			},
+			colors: ['F7F7F7', 'BBBCC0'],
+			colorNames: {
+				'F7F7F7': 'Summit White',
+				'BBBCC0': 'Quicksilver Metallic'
+			},
+			colorPrice: {
+				'F7F7F7': 0,
+				'BBBCC0': 495
+			}
+		},
+		'Sierra 2500' : {
+			name: 'Sierra 2500',
+			basePrice: 58590,
+			type: 2,
+			driveTrain: ['RWD', 'AWD'],
+			driveTrainPrice: {
+				'RWD': 0,
+				'AWD': 3200
+			},
+			trim: ['Denali'],
+			trimPrice: {
+				'Denali': 0
+			},
+			colors: ['F7F7F7', 'BBBCC0', '1B1B1D', '6F0619', 'F3F4EE'],
+			colorNames: {
+				'F7F7F7': 'Summit White',
+				'1B1B1D': 'Onyx Black',
+				'BBBCC0': 'Quicksilver Metallic',
+				'6F0619': 'Red Quartz Tintcoat',
+				'F3F4EE': 'Ebony Twilight Metallic'
+			},
+			colorPrice: {
+				'F7F7F7': 0,
+				'1B1B1D': 0,
+				'BBBCC0': 495,
+				'6F0619' : 596,
+				'F3F4EE': 1095
+			}
+		}
 	}
 }
 
