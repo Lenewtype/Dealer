@@ -264,7 +264,6 @@ const vehicleConfig = {
 				'243141': 1175
 			}
 		}
-
 	},
 	'GMC' : {
 		'Acadia' : {
